@@ -1,0 +1,1008 @@
+/* استيراد الخط */
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Cairo', sans-serif;
+  background-color: #121212;
+  color: #f0f0f0;
+  line-height: 1.6;
+  direction: rtl;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* الهيدر */
+.main-header {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+              url('../images/header-bg.jpg') center/cover no-repeat;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+  padding: 2rem;
+}
+
+.main-header h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  color: #00bcd4;
+}
+
+.main-header p {
+  font-size: 1.4rem;
+  font-weight: 300;
+  color: #ccc;
+}
+
+/* محتوى الصفحة الرئيسية */
+.main-home {
+  padding: 4rem 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  background-color: #111;
+  color: #fff;
+}
+
+.home-content {
+  padding: 3rem 0;
+}
+
+/* بطاقات الأقسام */
+.card-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.card {
+  background-color: #1e1e1e;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 15px rgba(0,0,0,0.3);
+  width: 300px;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+.card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 1.5rem;
+}
+
+.card-content h2 {
+  color: #03a9f4;
+  margin-bottom: 1rem;
+}
+
+.card-content p {
+  font-size: 0.95rem;
+  color: #ccc;
+  margin-bottom: 1rem;
+}
+
+/* زر */
+.btn {
+  display: inline-block;
+  background-color: #00bcd4;
+  color: #fff;
+  padding: 0.6rem 1.2rem;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #0097a7;
+}
+
+/* فوتر */
+.main-footer {
+  background-color: #1f1f1f;
+  text-align: center;
+  padding: 1.5rem 0;
+  color: #aaa;
+  margin-top: 3rem;
+  border-top: 1px solid #333;
+}
+
+/* دعم الجوال */
+@media (max-width: 768px) {
+  .card-section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 100%;
+    max-width: 90%;
+  }
+}
+
+/* فيديو */
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 25px;
+  height: 0;
+  overflow: hidden;
+  border-radius: 10px;
+  margin: 20px 0;
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+/* خلفية قسم البرمجة */
+.programming-bg {
+  background-image: url('../images/programming-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+}
+
+/* خلفية قسم المونتاج */
+.montage-bg {
+  background-image: url('../images/montage-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+}
+
+/* ترويسة القسم */
+.section-header {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 60px 20px;
+  text-align: center;
+  color: #fff;
+}
+
+.section-header .overlay {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 30px;
+  border-radius: 10px;
+  display: inline-block;
+}
+
+.section-header h1 {
+  font-size: 40px;
+  margin-bottom: 15px;
+}
+
+/* زر الرجوع */
+.back-btn {
+  background-color: #f39c12;
+  color: #fff;
+  padding: 10px 25px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+.back-btn:hover {
+  background-color: #e67e22;
+}
+
+/* بطاقات الدروس */
+.section-card {
+  background-color: #1f1f1f;
+  padding: 30px;
+  border-radius: 10px;
+  text-align: center;
+  transition: 0.3s ease;
+}
+
+.section-card:hover {
+  background-color: #333;
+}
+
+.section-link {
+  text-decoration: none;
+  color: #fff;
+}
+
+.section-link h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+  color: #00d9ff;
+}
+
+.section-link p {
+  font-size: 16px;
+  color: #ccc;
+}
+
+.sections-container {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  margin-top: 50px;
+}
+.card-section {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-top: 40px;
+}
+
+.section-card {
+  background-color: #1e1e1e;
+  border-radius: 10px;
+  overflow: hidden;
+  width: 300px;
+  transition: transform 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.section-card:hover {
+  transform: translateY(-5px);
+}
+
+.section-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  text-align: center;
+}
+
+.section-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.section-card h2 {
+  margin: 15px 0 10px;
+  font-size: 22px;
+  color: #fff;
+}
+
+.section-card p {
+  margin: 0 0 15px;
+  font-size: 16px;
+  color: #ccc;
+}
+.sections-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 40px;
+  flex-wrap: wrap;
+}
+
+.section-card {
+  width: 300px;
+  background-color: #1f1f1f;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s ease;
+}
+
+.section-card:hover {
+  transform: translateY(-5px);
+}
+
+.section-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.section-link {
+  display: block;
+  text-decoration: none;
+  color: #fff;
+  padding: 20px;
+}
+
+.section-link h2 {
+  margin: 0 0 10px;
+  font-size: 22px;
+}
+
+.section-link p {
+  font-size: 15px;
+  color: #ccc;
+}
+.section-cards-wrapper {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding: 50px 20px;
+  background-color: #121212;
+}
+
+.modern-card {
+  width: 320px;
+  background-color: #1e1e1e;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.modern-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.7);
+}
+
+.modern-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  display: block;
+}
+
+.card-body {
+  padding: 20px;
+  color: #fff;
+  text-align: center;
+}
+
+.card-body h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.card-body p {
+  font-size: 15px;
+  color: #ccc;
+  margin-bottom: 20px;
+}
+
+.card-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background: #00aaff;
+  color: #fff;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+
+.card-btn:hover {
+  background: #0088cc;
+}
+/* إخفاء الهيدر لما نضيف كلاس no-header-bg */
+.no-header-bg header.section-header {
+  display: none;
+}
+
+/* تنسيق كروت الدروس */
+.lessons-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 40px;
+}
+
+.lesson-card {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.lesson-card h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.lesson-card video {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.download-btn {
+  display: inline-block;
+  margin-top: 8px;
+  padding: 8px 16px;
+  background-color: #007bff;
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.download-btn:hover {
+  background-color: #0056b3;
+}
+.lessons-page {
+  background-color: #f8f9fa;
+  padding: 20px;
+  font-family: 'Cairo', sans-serif;
+}
+
+.video-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 25px;
+  max-width: 1200px;
+  margin: auto;
+  padding: 40px 20px;
+}
+
+.video-card {
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.video-card:hover {
+  transform: translateY(-5px);
+}
+
+.video-card iframe {
+  width: 100%;
+  height: 200px;
+  border-radius: 8px;
+  border: none;
+  margin-bottom: 10px;
+}
+
+.video-card h3 {
+  font-size: 18px;
+  margin: 10px 0;
+  color: #333;
+}
+
+.watch-btn {
+  display: inline-block;
+  margin-top: 8px;
+  padding: 10px 16px;
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+}
+
+.watch-btn:hover {
+  background-color: #0056b3;
+}
+.video-lessons-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 40px;
+  justify-content: center;
+}
+
+.video-card {
+  background: #fff;
+  border-radius: 10px;
+  width: 340px;
+  padding: 20px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.video-card:hover {
+  transform: translateY(-5px);
+}
+
+.video-frame {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  margin-bottom: 15px;
+}
+
+.video-frame iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-radius: 10px;
+}
+
+.watch-btn {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 6px;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.watch-btn:hover {
+  background-color: #0056b3;
+}
+/* ===== HTML Lessons Page ===== */
+.html-lessons-page {
+  background: #f8f9fa;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding-bottom: 50px;
+}
+
+.html-header {
+  text-align: center;
+  background: linear-gradient(135deg, #007bff, #00c6ff);
+  color: white;
+  padding: 40px 20px;
+  position: relative;
+}
+
+.animated-title {
+  font-size: 36px;
+  border: 3px solid white;
+  display: inline-block;
+  padding: 10px 30px;
+  border-radius: 12px;
+  animation: pulse 2s infinite;
+}
+
+.back-button {
+  position: absolute;
+  left: 20px;
+  top: 20px;
+  color: white;
+  text-decoration: none;
+  background: rgba(255, 255, 255, 0.2);
+  padding: 8px 15px;
+  border-radius: 8px;
+  transition: 0.3s ease;
+}
+
+.back-button:hover {
+  background: rgba(255, 255, 255, 0.4);
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}
+
+.videos-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  margin-top: 40px;
+  padding: 0 20px;
+}
+
+.video-card {
+  background: white;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+  padding: 20px;
+  border-radius: 12px;
+  width: 90%;
+  max-width: 800px;
+  text-align: center;
+}
+
+.video-card h2 {
+  font-size: 22px;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.video-wrapper iframe {
+  width: 100%;
+  height: 400px;
+  border-radius: 10px;
+}
+.lessons-page {
+  background-color: #f0f4f8;
+  font-family: 'Segoe UI', sans-serif;
+  padding: 20px;
+}
+
+.lessons-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #2b5876;
+  background: linear-gradient(to right, #4e4376, #2b5876);
+  color: white;
+  padding: 20px;
+  border-radius: 12px;
+  margin-bottom: 30px;
+}
+
+.title-frame {
+  font-size: 32px;
+  border: 2px solid white;
+  padding: 10px 20px;
+  border-radius: 8px;
+  background-color: rgba(255,255,255,0.1);
+}
+
+.back-button {
+  background-color: #ffffff22;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.back-button:hover {
+  background-color: #ffffff44;
+}
+
+.videos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+}
+
+.video-card {
+  background-color: white;
+  padding: 15px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+}
+
+.video-card:hover {
+  transform: translateY(-5px);
+}
+
+.video-card iframe {
+  width: 100%;
+  height: 180px;
+  border-radius: 8px;
+  border: none;
+}
+
+.video-card h3 {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 18px;
+}
+/* --- CSS Page Colors --- */
+body.css-page {
+  background-color: #f0f4f8;
+  font-family: 'Cairo', sans-serif;
+}
+
+/* --- عنوان الدرس --- */
+.lessons-header {
+  background: #0077b6;
+  padding: 20px;
+  text-align: center;
+  color: #fff;
+  position: relative;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.lesson-title {
+  font-size: 32px;
+  border: 2px solid #fff;
+  display: inline-block;
+  padding: 10px 30px;
+  border-radius: 10px;
+  background-color: rgba(255,255,255,0.1);
+}
+
+/* --- زر الرجوع --- */
+.back-btn {
+  position: absolute;
+  left: 20px;
+  top: 20px;
+  background-color: #023e8a;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+.back-btn:hover {
+  background-color: #03045e;
+}
+
+/* --- عرض الفيديوهات --- */
+.videos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+  padding: 40px;
+}
+
+.video-card {
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  transition: 0.3s ease;
+}
+.video-card:hover {
+  transform: translateY(-5px);
+}
+
+.video-card iframe {
+  width: 100%;
+  height: 180px;
+  border: none;
+  display: block;
+}
+
+.video-card h3 {
+  padding: 15px;
+  text-align: center;
+  font-size: 18px;
+  color: #023047;
+}
+/* --- عرض الفيديوهات على شكل شبكة --- */
+.videos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+  padding: 30px 40px;
+}
+
+/* --- تصميم كروت الفيديو --- */
+.video-card {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+}
+
+.video-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+.video-card iframe {
+  width: 100%;
+  height: 200px;
+  border: none;
+}
+
+.video-card h3 {
+  margin: 15px 0;
+  font-size: 18px;
+  color: #03045e;
+}
+/* خلفية مميزة لجافاسكريبت */
+body.js-bg {
+  background: linear-gradient(to right, #f4d03f, #f5c542);
+}
+
+/* لون عنوان الدرس */
+.lesson-title {
+  background-color: #111;
+  color: #f4d03f;
+  padding: 15px 30px;
+  font-size: 32px;
+  text-align: center;
+  border-radius: 8px;
+  margin-top: 30px;
+}
+.lessons-page {
+  background-color: #f5f7fa;
+}
+
+.backend-header {
+  background-image: url('../images/backend-bg.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.lessons-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.lesson-card {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 1rem;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+}
+
+.lesson-card:hover {
+  transform: translateY(-5px);
+}
+
+.lesson-card h2 {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  background-color: #222;
+  color: #fff;
+  padding: 0.5rem;
+  border-radius: 6px;
+}
+
+.video-wrapper {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.video-wrapper iframe {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+/* خلفية قسم المونتاج */
+.montage-bg {
+  background: linear-gradient(to bottom right, #0f0f0f, #1c1c1c);
+  color: #fff;
+}
+
+/* شبكة الكروت */
+.montage-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+  padding: 40px 20px;
+}
+
+/* أنيميشن ظهور */
+.fade-in {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeInUp 0.8s ease forwards;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/* شبكة الكروت */
+.montage-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* كروت البرامج */
+.modern-card {
+  background-color: #1e1e1e;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.modern-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5);
+}
+
+.modern-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.card-body {
+  padding: 20px;
+  text-align: center;
+}
+
+.card-body h2 {
+  margin: 0 0 10px;
+  color: #fff;
+}
+
+.card-body p {
+  color: #ccc;
+  font-size: 0.95rem;
+  margin-bottom: 15px;
+}
+
+.card-btn {
+  display: inline-block;
+  background-color: #ff4d4d;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+
+.card-btn:hover {
+  background-color: #e63946;
+}
+
+/* زر الرجوع */
+.back-btn {
+  background-color: #444;
+  margin-top: 20px;
+}
+
+.back-btn:hover {
+  background-color: #666;
+}
+
+/* أنيميشن */
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 0.8s ease-in forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* الهيدر */
+.section-header {
+  background: url('../images/montage-bg.jpg') no-repeat center center/cover;
+  position: relative;
+  height: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.section-header .overlay {
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.section-header h1 {
+  color: #fff;
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
